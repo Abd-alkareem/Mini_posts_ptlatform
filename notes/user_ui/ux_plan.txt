@@ -1,0 +1,60 @@
+ok, so for the user activites in the web site
+
+- main activites :
+    POSTS [
+    - write a post .
+    - edit his posts .
+    - delete the posts .
+    - no photos on the posts .
+    - no shear .
+    - there is a field for hashtag ,and you can add only one hastag for every post .
+    - we can click on hashtag to have a list with linked posts .
+        ->> it will display in another component with go back btn .
+    - we can edit the hashtag in post .
+    - hashtags must be wrote with _ syntaxe .
+    - we can search in a field for hashtags .
+    - we can add LIKE or DESLIKE for any post 
+        ->> only one and we can return and change it any time .
+    - posts will be display only in one page with search field .
+    - clicking on any account will display his posts after his information .
+    - the post will display some info about the weriter .
+    - 
+    ]
+
+    ACCOUNTS [
+    - there is no friends request .
+    - we can search for accounts by name or username .
+    - clicking on account name or username in posts or in search result will take us to 
+        ->> other component that will display information about the account 
+        ->> like email, created at, number of posts .
+    - we can save account in our list so we can go back to him any time 
+        ->> so there will be a page for saved accounts .
+    - in saved accounts there will be a list of accounts and when we click on the account
+        ->> the information page will open .
+    - 
+    ]
+
+    MY ACCOUNT [
+        - I can change my photo any time with no conditions .
+        - i can change my name 1 time in week with no conditions on unique name .
+        - i can't change my username so all sql will depand on it .
+        - i can change my email but it must be unique .
+        - i can change my password one time on 30 day 
+            ->> but i must enter the previos password .
+        - i can delete my account and then all my posts delete and likes/deslikes 
+    ]
+
+
+// DESIGN
+    - home page     {DONE} 
+    - services page {DONE}
+    - contact page // formsubmit / inter links for social / your email 
+    - ACTIVE PAGE :
+        - Add post :
+            + form to add the post {done}
+            + falidataion on {post text, hashtag text} {done}
+            + hastag with _ style {done}
+            + api fiel {done}
+            + module in postes . module (it will be common between admin and user) {done}
+            + api will slice for user api and admin api {done}
+

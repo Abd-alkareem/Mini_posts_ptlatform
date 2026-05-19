@@ -1,0 +1,135 @@
+{
+  "sidebar": {
+    "home": "Home",
+    "what_we_do": "What We Do",
+    "posts": "All Posts",
+    "add_post": "Add Post",
+    "profile": "My Profile",
+    "logout": "Logout"
+  },
+  "welcome": {
+    "first_m": "Discover 'Posts Platform'",
+    "description_1": "Explore my first full-stack journey. Sign up to see how I build scalable applications from frontend to backend.",
+    "login_btn": "Log In",
+    "sign_up_btn": "Create Account"
+  },
+  "log_in": {
+    "form_title": "login form",
+    "username_label": "Enter your username",
+    "password_label": "Enter your passowrd",
+    "log_btn": "login",
+    "para": "Not a member ?",
+    "link": "Create Account"
+  },
+  "log_in_errors_message": {
+    "username_field": "The 'Username' field value is invalid",
+    "password_field": "The 'Password' field value is invalid"
+  },
+  "log_in_toasts": {
+    "authed_succfully": "loged In succfully, welcome.",
+    "authing_fild": "there is no account with this username & password",
+    "error_on_request": "Opps!, something wrong in request."
+  },
+  "sign_up": {
+    "form_title": "Create Account",
+    "full_name_label": "Full Name",
+    "username_label": "Username",
+    "email_label": "Email Address",
+    "password_label": "Password",
+    "confirm_password_label": "Confirm Password",
+    "sign_up_btn": "Create "
+  },
+  "sign_up_errors_message": {
+    "name_field": "The 'Full Name' field value is invalid",
+    "username_field": "The 'Username' field value is invalid",
+    "email_field": "The 'Email' field value is invalid",
+    "password_field": "The 'Password' field value is invalid",
+    "confirm_password": "Passwords do not match",
+    "no_links_allowed": "External links are not allowed",
+    "no_html_allowed": "HTML tags/code are not allowed",
+    "Avalible username error": "This USERNAME is not avalible",
+    "Avalible email error": "This EMAIL is not avalible"
+  },
+  "sign_up_toasts": {
+    "created_succfully": "Great, Account Created.",
+    "error_on_create": "Opps!, something wrong ."
+  },
+  "home_page_texts": {
+    "main-card-text": "Hi there! This is the 'POSTS PLATFORM' application. Take a look and have some fun with us.",
+    "secound_card_text": "This website is a simple tutorial for me to learn how to build a full-stack website. If you are interested in knowing who I am, go to:",
+    "link_in_secound_card": " ' ENG ABL AL-KAREEM '"
+  },
+  "services_page_texts": {
+    "card_1": {
+      "title": "Share Your Thoughts",
+      "description": "Express yourself freely through simple and fast text posts. You can write, edit, or delete your posts anytime."
+    },
+    "card_2": {
+      "title": "Explore via Hashtags",
+      "description": "Organize your content using hashtags. One click on any tag takes you to a world of related posts."
+    },
+    "card_3": {
+      "title": "Connect & Save",
+      "description": "React to posts and save your favorite accounts to your private list to revisit them whenever you want."
+    }
+  },
+  "contact_page": {
+    "page_title": "Contact this project's developer, 'Eng ABD AL-KAREEM'",
+    "form_title": "Contact us directly via Email",
+    "form_fields": {
+      "name_label": "Full Name",
+      "email_label": "Email Address",
+      "subject_label": "Subject",
+      "message_label": "How can I help you?",
+      "send_btn": "Send Message",
+      "success_msg": "Your message has been received, I will get back to you as soon as possible!"
+    },
+    "social_title": "Follow my journey on these platforms .",
+    "email_copied": "email copied .",
+    "email_sent_seccfullt": "Your message has been sent successfully! We will get back to you soon.",
+    "can't_send_email": "Sorry, we couldn't send your message right now. Please try again later."
+  },
+  "add_post_page": {
+    "page_title": "Create New Post",
+    "form_title": "Share Your Thoughts",
+    "form_paragraph": "What's on your mind today? Share it with your professional network.",
+    "hastag_label": "Relevant Hashtags (Optional)",
+    "post_label": "Post Content",
+    "add_btn": "Publish Post",
+    "post_created": "published successfully .",
+    "create_errore": "Opps, something wrong!!",
+    "error_message": "Something went wrong. Please try again later.",
+    "no_links_allowed": "you can't add links in this field",
+    "no_html_allowed": "you can't add html tags in this field",
+    "required_field": "this filed is required, can't let it empty",
+    "invalid_hash_format": "Hashtag must start with a letter, cannot end with (_), and can only contain letters and numbers."
+  },
+  "main_posts_page": {
+    "all_posts_title": "News Feed",
+    "hash_posts_title": "Explore Hashtags",
+    "my_posts_title": "My Publications",
+    "delete_post_btn": "Delete Post",
+    "first_m_in_delete_box": "Are you sure?",
+    "secound_m_in_delete_box": "This action cannot be undone. This post will be permanently removed.",
+    "cancle_delete_btn": "Cancel",
+    "confirm_delete_btn": "Yes, Delete",
+    "deleted_done_title": "Deleted Successfully!",
+    "deleted_done_p": "The post has been permanently removed from your feed.",
+    "edit_post_btn": "Edit Post",
+    "show_more": "Show more",
+    "like_btn": "Like",
+    "unLike_btn": "Dislike",
+    "copy_btn": "Copy Link",
+    "copy_toast_text": "Post content copied to clipboard!",
+    "search_field_label": "Search for hashtags...",
+    "no_posts_message": "No posts found to display."
+  },
+  "edit_post_page": {
+    "page_title": "Edit Post",
+    "form_title": "Update Content",
+    "form_paragraph": "You can edit your post content or change the associated hashtags here. Changes will be updated instantly after saving.",
+    "edit_btn": "Update !",
+    "post_updated": "Updated successfully .",
+    "update_errore": "Opps, something wrong!!"
+  }
+}

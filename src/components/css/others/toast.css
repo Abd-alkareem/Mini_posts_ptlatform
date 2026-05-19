@@ -1,0 +1,29 @@
+.toast {
+  display: flex;
+  width: 100%;
+  max-width: 300px;
+  border: 2px solid var(--alt-color);
+  padding: 16px 14px;
+  position: absolute;
+  bottom: 20px;
+  right: -1000px;
+  background-color: white;
+  border-radius: 26px;
+  transition: 0.6s;
+  z-index: 999;
+}
+.toast.active {
+  right: 36px;
+}
+
+.toast span {
+  /* color: var(--main-color); */
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.toast span.normal{
+  color: var(--main-color);
+}
+.toast span{
+  color: red;
+}

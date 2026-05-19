@@ -1,0 +1,24 @@
+now we will build the ui/ux for the normal user 
+
+we need to :
+1 -manage the folders and drow the build of fieles . {done}
+2 -decide what is the sevisec that the website will give to the normal user in V 1.0.0 
+    ->> of application . {done}
+3 -we have already the sidebar components ,but it will need some edit to fit both type of accounts
+    ->> user/admin ,We can depend on oue prev projects to have an idea .
+4 -we will drow a primary design for all pages in user ui/ux . 
+5 -starting development the static pages . {DONE}
+6 -decide what the admin can do in V 1.0.0 of application to decide how we will build db and 
+    ->> backend to between user/admin functionalty .
+7 -start developments active pages from front to back one by one .
+
+
+
+
+
+// SIDE POINTS TO WORK ON LETTER
+
+- WE SHOULD DEAL WITH THE RESPONSE FROM THE API IN LOG_IN/SIGN_UP OPERATION WITH BETTER WAY
+  ->> WE SHOULD TELL THE USER AN INFORMATION THAT TELL HIM EXACTLY WHERE THE PROPLEM
+  ->> LIKE THE USER IS EXSSEST BUT THE PASSWORD IS WRONG OR THE USER IS NOT EXSSEST IN DB ...
+

@@ -1,0 +1,66 @@
+.services-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--flash-color);
+  overflow: hidden;
+  padding: 30px 20px;
+}
+.services-page .holder {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  height: 90vh;
+}
+.services-page .holder .service-card {
+  width: 32%;
+  padding: 10px;
+}
+@media (max-width: 767px) {
+  .services-page .holder .service-card {
+    width: 100%;
+    margin-top: 0 !important;
+  }
+}
+.services-page .holder .service-card .i-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 10px;
+}
+.services-page .holder .service-card .i-frame .i {
+  width: 70px;
+  height: 70px;
+  color: white;
+}
+.services-page .holder .service-card .service-title {
+  text-align: start;
+  display: block;
+  color: var(--alt-color);
+  font-size: 24px;
+  font-weight: 500;
+  min-height: 60px;
+}
+.services-page .holder .service-card .service-description {
+  align-items: start;
+  margin: 0 auto;
+  color: white;
+  font-size: 18px;
+  line-height: 1.6;
+}
+@media (max-width: 767px) {
+  .services-page .holder .service-card .service-title {
+    text-align: center;
+  }
+  .services-page .holder .service-card .service-description {
+    text-align: center;
+    max-width: 500px;
+  }
+}

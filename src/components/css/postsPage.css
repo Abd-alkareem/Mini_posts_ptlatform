@@ -1,0 +1,101 @@
+.posts-page {
+  background-color: var(--flash-color);
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.posts-page .page-title {
+  color: white;
+  font-size: 32px;
+  display: block;
+  margin: 0 0 0px;
+  padding: 10px 0;
+  text-align: center;
+}
+.posts-page .controle {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 8px 20px;
+  background-color: var(--main-color);
+}
+.posts-page .controle a {
+  width: 70px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 0;
+}
+.posts-page .controle a .i {
+  width: 100%;
+  height: 50%;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  color: var(--alt-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.posts-page .controle a .i:hover {
+  color: white;
+}
+.posts-page .controle a .i.active {
+  border-color: white;
+  color: white;
+}
+.posts-page .holder {
+  width: 100%;
+  flex: 1;
+  /* overflow-y: scroll; */
+  /* padding-bottom: 60px; */
+}
+/* loader div  */
+.posts-list .loader-div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff2b;
+  z-index: 9;
+}
+/* loader div  */
+
+/* search field in hash page */
+.posts-list .search-field {
+  width: 100%;
+  padding: 10px 8px;
+  background-color: white;
+}
+.posts-list .search-field input {
+  background-color: transparent;
+  color: var(--main-color);
+  font-size: 20px;
+  border: none;
+  border-bottom: 2px solid var(--main-color);
+  padding: 4px;
+}
+.posts-list .search-field input::placeholder {
+  color: var(--main-color);
+  opacity: 0.7;
+}
+.posts-list .search-field input:focus {
+  outline: none;
+}
+/* search field in hash page */
+.posts-list .no-posts-p {
+  display: block;
+  width: 90%;
+  background-color: white;
+  text-align: center;
+  margin: 20px auto;
+  padding: 14px;
+  font-size: 20px;
+  color: black;
+  border-radius: 10px;
+  text-transform: capitalize;
+}

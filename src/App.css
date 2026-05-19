@@ -1,0 +1,159 @@
+@import "./constant/variable.css";
+
+/* font edit */
+/* 1. تعريف المتغيرات في الجذور */
+:root {
+  /* EN الخطوط الافتراضية للموقع */
+  --site-font: "Inter", sans-serif;
+}
+/* 2. تغيير المتغير فقط عند قلب اللغة للعربية*/
+[dir="rtl"] {
+  --site-font: "ReadexPro", sans-serif;
+}
+
+/* لإعطاء لمسة احترافية للعناوين */
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+.bold-text {
+  font-weight: 700;
+}
+
+/* public */
+*::selection {
+  background-color: transparent;
+}
+.app {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: var(--site-font) !important;
+  display: flex;
+  order: 1;
+}
+[dir="rtl"] .main-section {
+  /* ونجعل المحتوى يليه ليظهر على يساره */
+  order: 2;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+/*  */
+.main-section {
+  flex: 1;
+  height: 100vh;
+  position: relative;
+  background-color: #333;
+  /* border-right: 4px solid red; */
+}
+/* @media (max-width: 991px) {
+  .main-section {
+    width: 100%;
+  }
+} */
+.language-setting {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: -68px;
+  left: 30px;
+  transition: 0.3s;
+  z-index: 10;
+}
+.language-setting.active {
+  top: 0;
+}
+.language-setting .lang-btn {
+  width: 100%;
+  height: 28px;
+  margin: 0px auto;
+  background-color: var(--main-color);
+  padding: 4px 0px 4px;
+  border-radius: 0px 0 4px 4px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.language-setting .lang-btn:hover {
+  color: var(--alt-color);
+}
+.language-setting span {
+  height: 34px;
+  width: 76px;
+  text-align: center;
+  padding: 6px 4px;
+  background-color: var(--main-color);
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.language-setting span:hover {
+  background-color: var(--flash-color);
+}
+.language-setting span.active {
+  background-color: var(--alt-color);
+  color: var(--main-color);
+}
+/* loader  */
+.loader-div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--flash-color);
+  z-index: 11;
+}
+.loader-dev .spinner {
+  color: var(--alt-color);
+}
+/* loader  */
+/* costomize all scroll bar */
+/* 1. الحاوية التي تريد تطبيق السكرول عليها */
+/* يمكنك تطبيقه على الـ body أو كلاس محدد مثل .main-section */
+.custom-scroll {
+  overflow-y: auto; /* إظهار السكرول عند الحاجة فقط */
+}
+
+/* 2. عرض المسار (البار الأساسي) */
+.custom-scroll::-webkit-scrollbar {
+  width: 6px; /* جعل البار نحيفاً كما طلبت */
+}
+
+/* 3. تنسيق المسار الثابت (البار الأساسي) */
+.custom-scroll::-webkit-scrollbar-track {
+  background: var(--main-color); /* لونك الأساسي (نفس لون اللودر) */
+  border-radius: 10px;
+}
+
+/* 4. تنسيق القطعة المتحركة (Thumb) */
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: var(--alt-color); /* لون ثانوي (فاتح أو مغاير ليعطي تبايناً) */
+  border-radius: 10px;
+  border: 1px solid var(--alt-color); /* إطار بسيط ليفصله عن الخلفية */
+}
+
+/* 5. تأثير عند تمرير الماوس فوق القطعة المتحركة */
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--flash-color); /* تفتيح اللون الثانوي عند التفاعل */
+  cursor: pointer;
+}
+/* costomize all scroll bar */

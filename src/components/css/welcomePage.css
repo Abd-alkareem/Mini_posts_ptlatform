@@ -1,0 +1,79 @@
+.welcome-page {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+}
+.welcome-page .bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* تضمن تغطية المساحة بالكامل مع الحفاظ على أبعاد الصورة دون تمطيط */
+  object-fit: cover;
+  /* لضمان أن يكون مركز الصورة هو الظاهر دائماً عند تغيير حجم الشاشة */
+  object-position: center;
+  z-index: -1;
+}
+.welcome-page > div {
+  max-width: 600px;
+  width: 90%;
+  background-color: var(--flash-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid white;
+  border-radius: 20px;
+}
+.welcome-page > div .first-message {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  font-size: 40px;
+  color: white;
+}
+.welcome-page > div .description {
+  display: block;
+  margin: 10px auto 20px;
+  padding: 0 20px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+.welcome-page > div .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px auto;
+  max-width: 90%;
+}
+.welcome-page > div .buttons .btn {
+  text-align: center;
+  background-color: var(--main-color);
+  color: var(--alt-color);
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.welcome-page > div .buttons .btn:hover {
+  color: white;
+  background-color: var(--alt-color);
+}
+.welcome-page .v-bar {
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+}

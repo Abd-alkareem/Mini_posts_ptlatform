@@ -1,0 +1,142 @@
+.sign_up-page {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+}
+.sign_up-page .bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* تضمن تغطية المساحة بالكامل مع الحفاظ على أبعاد الصورة دون تمطيط */
+  object-fit: cover;
+  /* لضمان أن يكون مركز الصورة هو الظاهر دائماً عند تغيير حجم الشاشة */
+  object-position: center;
+  z-index: -1;
+}
+.sign_up-page .form-div {
+  max-width: 300px;
+  width: 90%;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid white;
+  border-radius: 4px;
+}
+.sign_up-page .form-div .form-title {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  background: var(--alt-color);
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 20px;
+  border-radius: 4px 4px 0 0;
+}
+.sign_up-page .form-div form .in-fild {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 250px;
+  margin: 0 auto 8px;
+  position: relative;
+}
+.sign_up-page .form-div form .in-fild .i-box {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--alt-color);
+  color: var(--main-color);
+}
+.sign_up-page .form-div form .in-fild .pass-i {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: var(--main-color);
+  position: absolute;
+  inset-inline-end: 0; /* ستكون يميناً في الإنجليزي ويساراً في العربي تلقائياً */
+  top: 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sign_up-page .form-div form .in-fild input {
+  height: 40px;
+  margin: 0;
+  border: 1px solid var(--alt-color);
+  background: transparent;
+  color: var(--alt-color);
+  padding: 0 6px;
+  font-size: 16px;
+}
+.sign_up-page .form-div form .in-fild input::placeholder {
+  color: var(--alt-color);
+}
+.sign_up-page .form-div form .in-fild input:focus {
+  outline: none;
+}
+.sign_up-page .form-div form input.sign_up-btn {
+  width: 90%;
+  max-width: 250px;
+  text-align: center;
+  padding: 6px 0;
+  margin: 6px auto;
+  display: block;
+  background-color: var(--alt-color);
+  border: 1px solid var(--alt-color);
+  border-radius: 2px;
+  font-size: 16px;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+.sign_up-page .form-div form input.sign_up-btn:hover {
+  background-color: var(--flash-color);
+}
+
+/*  */
+.error-message {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #ff4d4d;
+  font-size: 12px;
+  animation: fadeIn 0.3s ease;
+  margin: 0 auto 8px;
+  max-width: 250px;
+}
+.error-message span:nth-child(1){
+  display: flex;
+  align-items: center;
+  justify-content: centerc;
+}
+
+.error-message .error-icon {
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

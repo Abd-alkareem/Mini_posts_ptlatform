@@ -1,0 +1,168 @@
+.contact-us {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--flash-color);
+}
+.contact-us .page-title {
+  border-bottom: 2px solid white;
+  padding-bottom: 8px;
+  width: fit-content;
+  margin: 70px 10px 0;
+  font-size: 24px;
+  color: white;
+  padding: 0 0 10px 0;
+}
+.contact-us .holder {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 10px;
+  margin: 0 10px;
+  height: 90vh;
+  margin-top: 6px;
+}
+.contact-us .holder .part {
+  /* width: 50%; */
+  padding: 10px;
+}
+@media (max-width: 767px) {
+  .contact-us .holder .part {
+    width: 100% !important;
+  }
+}
+.contact-us .holder .form-div {
+  /* border-right: 2px solid white; */
+  flex: 1;
+}
+.contact-us .holder .form-div .form-title {
+  color: white;
+  display: block;
+  font-size: 22px;
+  /* border-bottom: 1px solid white; */
+  margin: 0 0 30px;
+  padding-bottom: 8px;
+}
+.contact-us .holder .form-div form {
+}
+.contact-us .holder .form-div .in-field {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  /* direction: ltr; */
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.contact-us .holder .form-div .in-field span {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  background-color: var(--main-color);
+}
+
+.contact-us .holder .form-div .in-field span .i {
+  color: white;
+  transition: 0.3s;
+}
+.contact-us .holder .form-div .in-field:has(.in-tag:focus) span .i {
+  color: var(--secound-color);
+}
+.contact-us .holder .form-div .in-field .in-tag {
+  background-color: transparent;
+  border: none;
+  padding: 2px 6px;
+  flex: 1;
+  height: 100%;
+  color: white;
+  font-size: 20px;
+}
+.contact-us .holder .form-div .in-field .in-tag:focus {
+  border: none;
+  outline: none;
+}
+.contact-us .holder .form-div .in-field .in-tag[name="message"] {
+  resize: none;
+  height: 100px;
+}
+.contact-us .holder .form-div .in-field .in-tag::placeholder {
+  color: white;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.contact-us .holder .form-div form .send-email-btn {
+  display: block;
+  width: 90%;
+  padding: 8px 10px;
+  margin: 10px auto;
+  background-color: var(--main-color);
+  color: white;
+  border: 2px solid var(--main-color);
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+.contact-us .holder .form-div form .send-email-btn:hover {
+  background-color: var(--alt-color);
+  color: var(--flash-color);
+}
+.contact-us .holder .contact-info {
+  margin-bottom: 80px;
+}
+.contact-us .holder .contact-info .social-title {
+  color: white;
+  display: block;
+  font-size: 20px;
+  margin: 0 0 30px;
+}
+.contact-us .holder .contact-info .mini-holder {
+}
+.contact-us .holder .contact-info .mini-holder .social-div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 14px;
+  background-color: white;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  padding: 6px;
+  max-width: 300px;
+  transition: 0.3s;
+}
+.contact-us .holder .contact-info .mini-holder .social-div:hover {
+  background-color: var(--alt-color);
+}
+.contact-us .holder .contact-info .mini-holder .social-div span {
+  width: 40px;
+  height: 40px;
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.contact-us .holder .contact-info .mini-holder .social-div span .i {
+  color: white;
+  width: 26px;
+  height: 26px;
+}
+.contact-us .holder .contact-info .mini-holder .social-div p {
+  margin: 0;
+  width: 80px;
+  text-align: center;
+  color: var(--alt-color);
+  font-weight: 500;
+  transition: 0.3s;
+}
+.contact-us .holder .contact-info .mini-holder .social-div:hover p {
+  color: white;
+}

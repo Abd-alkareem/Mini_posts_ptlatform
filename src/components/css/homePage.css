@@ -1,0 +1,82 @@
+.home-page {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.home-page .bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* تضمن تغطية المساحة بالكامل مع الحفاظ على أبعاد الصورة دون تمطيط */
+  object-fit: cover;
+  /* لضمان أن يكون مركز الصورة هو الظاهر دائماً عند تغيير حجم الشاشة */
+  object-position: center;
+  z-index: 0;
+}
+
+.home-page .main-card {
+  position: absolute;
+  left: 40px;
+  bottom: 200px;
+  z-index: 1;
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: var(--main-color);
+  opacity: 0.8;
+}
+@media (max-width: 577px) {
+  .home-page .main-card {
+    bottom: 250px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+.home-page .main-card span {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+.home-page .main-card span .website-i {
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+.home-page .main-card p {
+  width: 100%;
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: capitalize;
+  opacity: 1;
+}
+.home-page .secound-card {
+  z-index: 1;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--main-color);
+  color: white;
+  font-size: 18px;
+  text-transform: capitalize;
+  text-align: center;
+  line-height: 1.6;
+  width: 90%;
+  padding: 10px;
+}
+.home-page .secound-card .a {
+  color: var(--alt-color);
+  font-weight: 500;
+}

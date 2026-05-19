@@ -1,0 +1,155 @@
+.add_post-page {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.add_post-page::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  background-color: var(--flash-color);
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.add_post-page .bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* تضمن تغطية المساحة بالكامل مع الحفاظ على أبعاد الصورة دون تمطيط */
+  object-fit: cover;
+  /* لضمان أن يكون مركز الصورة هو الظاهر دائماً عند تغيير حجم الشاشة */
+  object-position: center;
+  z-index: 0;
+}
+.add_post-page .page-title {
+  position: relative;
+  z-index: 2;
+  display: block;
+  margin: 50px 20px 20px;
+  color: var(--alt-color);
+  font-size: 26px;
+  font-weight: bold;
+}
+.add_post-page .form-div {
+  z-index: 2;
+  position: relative;
+  border-radius: 8px;
+  background-color: white;
+  margin: 20px 20px;
+  padding: 20px;
+  border: 2px solid var(--main-color);
+}
+.add_post-page .form-div .title {
+  font-size: 22px;
+  color: var(--main-color);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.add_post-page .form-div p {
+  color: #333;
+  font-size: 18px;
+  line-height: 1.6;
+}
+.add_post-page .form-div .in-field {
+  border: 1px solid #666;
+  border-radius: 6px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 14px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.add_post-page .form-div .i-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #e6e4e4;
+  border-radius: 50%;
+}
+.add_post-page .form-div .i-frame .i {
+  color: var(--main-color);
+}
+.add_post-page .form-div .in-tag {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  font-size: 20px;
+}
+.add_post-page .form-div textarea {
+  resize: none;
+  height: 100px;
+}
+.add_post-page .form-div .in-tag:focus {
+  border: none;
+  outline: none;
+}
+
+.add_post-page .form-div .add-btn {
+  width: 90%;
+  padding: 8px;
+  color: white;
+  background-color: var(--main-color);
+  font-size: 18px;
+  text-align: center;
+  margin: 10px auto;
+  display: block;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.add_post-page .form-div .add-btn:hover {
+  background-color: var(--alt-color);
+  color: var(--main-color);
+}
+
+/* error maessage */
+
+.add_post-page .error-message {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  font-size: 12px;
+  animation: fadeIn 0.3s ease;
+  margin: -12px 4px 8px;
+  max-width: initial !important;
+}
+.add_post-page .error-message .error-text {
+  color: red;
+  padding: 0 6px;
+}
+.add_post-page .error-message span:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add_post-page .error-message .error-icon {
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  color: red;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
