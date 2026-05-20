@@ -2,7 +2,7 @@ import axios from "axios";
 
 const api = axios.create({
   // الرابط الأساسي للسيرفر (غيره لاحقاً لرابط الاستضافة)
-  baseURL: "http://mini-posts-ptlatform.rf.gd/api/",
+  baseURL: "https://mini-posts-ptlatform.rf.gd/api/",
   timeout: 10000, // مدة الانتظار قبل اعتبار الطلب فاشلاً (10 ثوانٍ)
   headers: {
     "Content-Type": "application/json",
