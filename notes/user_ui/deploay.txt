@@ -1,0 +1,7 @@
+1 - find a selloution for crros policy for the web site
+2 - test the website after deploay and post the first post
+3 - write a description for the front tag
+    - add the link
+    - write a readme for front repo
+4 - write a description for the back tage
+    - write a readme for the back repo
