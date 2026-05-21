@@ -1,8 +1,12 @@
 {
   "rewrites": [
     {
+      "source": "/api//:path*",
+      "destination": "https://mini-posts-ptlatform.rf.gd/v1.0/api/:path*"
+    },
+    {
       "source": "/api/:path*",
-      "destination": "https://mini-posts-ptlatform.rf.gd.infinityfreeapp.com/v1.0/api/:path*"
+      "destination": "https://mini-posts-ptlatform.rf.gd/v1.0/api/:path*"
     }
   ]
 }
